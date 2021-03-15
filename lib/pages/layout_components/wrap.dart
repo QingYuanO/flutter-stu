@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+
+class WrapPage extends StatelessWidget {
+  const WrapPage({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Wrap'),
+      ),
+      body: Center(
+        child: Wrap(
+          spacing: 4.0,
+          runSpacing: 5.0,
+          children: [
+            Chip(
+              avatar:
+                  CircleAvatar(backgroundColor: Colors.blue, child: Text('A')),
+              label: Text('Hamilton'),
+            ),
+            Chip(
+              avatar:
+                  CircleAvatar(backgroundColor: Colors.blue, child: Text('M')),
+              label: Text('Lafayette'),
+            ),
+            Chip(
+              avatar:
+                  CircleAvatar(backgroundColor: Colors.blue, child: Text('H')),
+              label: Text('Mulligan'),
+            ),
+            Chip(
+              avatar:
+                  CircleAvatar(backgroundColor: Colors.blue, child: Text('J')),
+              label: Text('Laurens'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
