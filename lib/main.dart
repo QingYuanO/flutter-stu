@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/introduce_list.dart';
 import 'package:flutter_application_1/pages/layout_components/index.dart';
+import 'package:flutter_application_1/pages/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,6 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
       'title': '布局组件',
       'subTitle': '介绍一系列的布局组件',
       'router': LayoutComponentsPage(),
+    },
+    {
+      'title': '容器组件',
+      'subTitle': '介绍一系列的容器组件',
+      'router': LayoutComponentsPage(),
+    },
+    {
+      'title': '登录界面',
+      'subTitle': '编写一个静态的登录界面',
+      'router': Login(),
     },
   ];
 

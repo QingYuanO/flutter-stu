@@ -10,19 +10,14 @@ class IntroduceListWidget extends StatelessWidget {
     return ListView.builder(
         itemCount: options.length,
         itemBuilder: (content, index) {
-          return Container(
+          return Card(
             margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
-            constraints: BoxConstraints(),
-            foregroundDecoration: BoxDecoration(
+            elevation: 8,
+            color: color,
+            shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),
-            decoration: BoxDecoration(boxShadow: [
-              //卡片阴影
-              BoxShadow(
-                  color: Colors.grey, offset: Offset(2.0, 2.0), blurRadius: 4.0)
-            ]),
             child: ListTile(
-              shape: CircleBorder(),
               dense: true,
               contentPadding: EdgeInsets.all(8),
               title: Text(
@@ -37,7 +32,6 @@ class IntroduceListWidget extends StatelessWidget {
                 Icons.arrow_forward_ios_outlined,
                 color: Colors.white,
               ),
-              tileColor: color,
               onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
