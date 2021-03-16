@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/introduce_list.dart';
 import 'package:flutter_application_1/pages/layout_components/index.dart';
 import 'package:flutter_application_1/pages/login.dart';
+import 'package:flutter_application_1/pages/me.dart';
+import 'package:flutter_application_1/pages/will_pop_scope.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,6 +47,16 @@ class _MyHomePageState extends State<MyHomePage> {
       'title': '登录界面',
       'subTitle': '编写一个静态的登录界面',
       'router': Login(),
+    },
+    {
+      'title': 'WillPopScope',
+      'subTitle': '阻止返回',
+      'router': WillPopScopePage(),
+    },
+    {
+      'title': '我的界面',
+      'subTitle': '静态的我的页面',
+      'router': MePage(),
     },
   ];
 
