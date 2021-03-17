@@ -11,11 +11,27 @@ class _LoginState extends State<Login> {
   TextEditingController _unameController = TextEditingController();
   TextEditingController _psdController = TextEditingController();
 
+  String _psd = '';
+  String _account = '';
+
   @override
   void initState() {
-    _unameController.addListener(() {});
-    _psdController.addListener(() {});
+    _unameController.addListener(() {
+      setState(() {
+        _account = _unameController.text;
+      });
+    });
+    _psdController.addListener(() {
+      setState(() {
+        _psd = _psdController.text;
+      });
+    });
     super.initState();
+  }
+
+  void commit() {
+    print(_unameController.text);
+    print(_psdController.text);
   }
 
   @override
@@ -53,8 +69,14 @@ class _LoginState extends State<Login> {
                     minimumSize:
                         MaterialStateProperty.all(Size.fromHeight(50))),
                 child: Text('提交'),
-                onPressed: () {},
+                onPressed: commit,
               ),
+            ),
+            Row(
+              children: [
+                Text(_account),
+                Text(_psd),
+              ],
             )
           ],
         ),
