@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/introduce_list.dart';
+import 'package:flutter_application_1/pages/layout_components/align.dart';
 import 'package:flutter_application_1/pages/layout_components/row_and_column.dart';
 import 'package:flutter_application_1/pages/layout_components/wrap.dart';
 
@@ -15,6 +16,11 @@ class LayoutComponentsPage extends StatelessWidget {
       'title': '线性布局(ROW和Column)',
       'subTitle': '所谓线性布局，即指沿水平或垂直方向排布子组件。Flutter 中通过Row和Column来实现线性布局',
       'router': RowAndColumnPage(),
+    },
+    {
+      'title': 'Align',
+      'subTitle': '调整一个子元素在父元素中的位置',
+      'router': AlignPage(),
     },
   ];
   @override
