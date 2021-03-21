@@ -25,7 +25,7 @@ class IntroduceListWidget extends StatelessWidget {
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
               subtitle: Text(
-                options[index]['subTitle'],
+                options[index]['subTitle'] ?? '',
                 style: TextStyle(color: Colors.grey[300]),
               ),
               trailing: Icon(

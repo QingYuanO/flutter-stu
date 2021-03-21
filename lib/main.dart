@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/introduce_list.dart';
+import 'package:flutter_application_1/pages/animations/index.dart';
+import 'package:flutter_application_1/pages/functional_components/Inherited.dart';
 import 'package:flutter_application_1/pages/layout_components/index.dart';
 import 'package:flutter_application_1/pages/page_list/index.dart';
 import 'package:flutter_application_1/pages/state_manager/index.dart';
@@ -59,6 +61,16 @@ class _MyHomePageState extends State<MyHomePage> {
       'title': '状态管理',
       'subTitle': 'Flutter实战 状态管理',
       'router': StateManagerPage(),
+    },
+    {
+      'title': '数据共享(InheritedWidget)',
+      'subTitle': '数据共享(InheritedWidget)',
+      'router': InheritedWidgetTestRoute(),
+    },
+    {
+      'title': 'Animations',
+      'subTitle': '动画效果',
+      'router': AnimationComponentsPage(),
     },
   ];
 
