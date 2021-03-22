@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/introduce_list.dart';
 import 'package:flutter_application_1/pages/animations/index.dart';
+import 'package:flutter_application_1/pages/effects/index.dart';
 import 'package:flutter_application_1/pages/functional_components/Inherited.dart';
 import 'package:flutter_application_1/pages/layout_components/index.dart';
 import 'package:flutter_application_1/pages/page_list/index.dart';
@@ -71,6 +72,11 @@ class _MyHomePageState extends State<MyHomePage> {
       'title': 'Animations',
       'subTitle': '动画效果',
       'router': AnimationComponentsPage(),
+    },
+    {
+      'title': 'Effects',
+      'subTitle': '异步操作等副作用',
+      'router': EffectsPage(),
     },
   ];
 
