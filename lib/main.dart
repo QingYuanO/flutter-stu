@@ -6,6 +6,7 @@ import 'package:flutter_application_1/pages/functional_components/Inherited.dart
 import 'package:flutter_application_1/pages/layout_components/index.dart';
 import 'package:flutter_application_1/pages/page_list/index.dart';
 import 'package:flutter_application_1/pages/state_manager/index.dart';
+import 'package:flutter_application_1/pages/week_components/index.dart';
 import 'package:flutter_application_1/pages/will_pop_scope.dart';
 
 import 'pages/chip_demo.dart';
@@ -77,6 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
       'title': 'Effects',
       'subTitle': '异步操作等副作用',
       'router': EffectsPage(),
+    },
+    {
+      'title': '每周widget',
+      'router': WeekComponentsPage(),
     },
   ];
 
