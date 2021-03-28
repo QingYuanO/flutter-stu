@@ -4,6 +4,8 @@ import 'package:flutter_application_1/pages/frosted.dart';
 import 'package:flutter_application_1/pages/page_list/login.dart';
 import 'package:flutter_application_1/pages/page_list/me.dart';
 
+import 'glass_page.dart';
+
 class PagelistDemoPage extends StatefulWidget {
   PagelistDemoPage({Key key}) : super(key: key);
 
@@ -27,6 +29,11 @@ class _PagelistDemoPageState extends State<PagelistDemoPage> {
       'title': '毛玻璃效果',
       'subTitle': '毛玻璃效果',
       'router': FrostedDemo(),
+    },
+    {
+      'title': '毛玻璃界面',
+      'subTitle': '毛玻璃界面',
+      'router': GlassmorphicSample(),
     },
   ];
   @override
